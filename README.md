@@ -1,6 +1,6 @@
 # Convertible Three Factor Model
 
-The buyer of a convertible bond (CB) receives periodic coupon payments from the issuer, but can also convert the CB into the issuer’s stock.  The convertible bond may also include call and put provisions, which respectively allow the issuer to buy back the convertible bond and the owner to put the convertible bond for respective preset amounts.  A three factor trinomial tree based model is presented for pricing the CB.
+The buyer of a convertible bond (CB) receives periodic coupon payments from the issuer, but can also convert the CB into the issuer’s stock.  The convertible bond may also include call and put provisions, which respectively allow the issuer to buy back the convertible bond and the owner to put the convertible bond for respective preset amounts (see https://finpricing.com/lib/EqConvertible.html).  A three factor trinomial tree based model is presented for pricing the CB.
 
 Here the short interest rate process is assumed to be of Ho-Lee form under the bond’s coupon currency risk-neutral probability measure, and the stock price and foreign exchange rate processes are assumed to follow geometric Brownian motion with drift under their respective risk-neutral probability measures.  
 
@@ -19,7 +19,5 @@ The CB is then valued by traversing the combined tree using backward induction. 
 We note that FP constructs an individual trinomial tree by first defining a related binomial tree.  A trinomial tree approximation is then constructed by coalescing adjacent pairs of binomial tree time slices into corresponding single trinomial tree steps.  Here the trinomial tree branching probabilities are taken as particular products of the probabilities on the two corresponding binomial tree time slices.  
 
 References:
-
-https://finpricing.com/lib/EqCliquet.html
 
 https://osf.io/pbjf8/download
